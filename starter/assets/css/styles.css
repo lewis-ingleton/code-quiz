@@ -86,3 +86,13 @@ li:nth-child(odd) {
   top: 10px;
   right: 10px;
 }
+
+#questionsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#questionsContainer > * {
+ width: 100%;
+
+}
