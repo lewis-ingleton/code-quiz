@@ -153,7 +153,6 @@ function clearStatusClass(element) {
 // Set and show final score 
 // Submit score with with initials 
 // Display scores on high scores page 
-// Keep scores in memory 
 // 
 
 // Countdown timer - setTimer and setInterval 
