@@ -43,9 +43,8 @@ function startGame() {
     questionsContainer.classList.remove('hide');
 
     setNextQuestion();
-
 }
-1
+
 // Set next question
 function setNextQuestion() {
     resetState()
@@ -63,9 +62,11 @@ function showQuestion(question) {
         button.classList.add('answer-button')
         if (answer.correct) {
             button.dataset.correct = answer.correct
+
         }
         button.addEventListener('click', selectAnswer)
         answerButtonElement.appendChild(button)
+
 
     });
 
@@ -77,6 +78,7 @@ function resetState() {
     while (answerButtonElement.firstChild) {
         answerButtonElement.removeChild(answerButtonElement.firstChild)
     }
+
 }
 
 
@@ -176,3 +178,6 @@ submitButton.addEventListener('click', submitScore)
 // get scores from local storage onto highscores 
 // JSON.parse back into array 
 // for loop over the array and create high score elements (p elemnts or li for example)
+
+// set function clear
+// set function reset 
